@@ -35,6 +35,7 @@ if database_log_enabled():
         business_id = models.CharField(max_length=512, default=None, null=True, blank=True, db_index=True)
         user_id = models.CharField(max_length=512, default=None, null=True, blank=True, db_index=True)
         apikey_id = models.CharField(max_length=512, default=None, null=True, blank=True, db_index=True)
+        resource_id = models.CharField(max_length=512, default=None, null=True, blank=True, db_index=True)
         data = models.JSONField(default=dict, blank=True)
 
         def __str__(self):
